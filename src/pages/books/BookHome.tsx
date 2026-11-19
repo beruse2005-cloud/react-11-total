@@ -1,0 +1,13 @@
+import styles from "./Home.module.css";
+import SearchBar from "./components/SearchBar.tsx";
+
+function BookHome() {
+    return (
+        <div className={styles.container}>
+            <span className={styles.title}>Google Books 검색</span>
+            <SearchBar keyword={""} />
+        </div>
+    );
+}
+
+export default BookHome;
