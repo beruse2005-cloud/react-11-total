@@ -1,41 +1,25 @@
-import type { DefaultTheme } from "styled-components";
-
-export const LightTheme: DefaultTheme = {
+// 라이트 모드 색상 팔레트
+export const LightTheme = {
     color: {
-        background: {
-            default: "#f4f6f8",
-            paper: "#ffffff",
-        },
-        text: {
-            default: "#2c3e50",
-            disabled: "#9e9e9e",
-        },
-        divider: "#eeeeee",
-        primary: "#1976d2",
-        secondary: "#f39c12",
-        success: "#2e7d32",
-        info: "#0288d1",
-        warning: "#ed6c02",
-        error: "#d32f2f",
+        background: "#f3f5f8", // 페이지 전체 바탕색
+        surface: "#ffffff", // 카드, 헤더, 패널 등 표면 색
+        muted: "#eef1f6", // 보조 배경 및 테이블 헤더 색
+        text: "#111827", // 기본 글자색
+        subText: "#6b7280", // 부가 설명 및 메타 글자색
+        border: "#e5e7eb", // 테두리선 색
+        primary: "#1d6feb", // 강조 포인트 색
     },
 };
 
-export const DarkTheme: DefaultTheme = {
+// 다크 모드 색상 팔레트 (LightTheme와 동일한 키 이름을 유지해야 테마 전환 시 코드 수정이 필요 없음)
+export const DarkTheme = {
     color: {
-        background: {
-            default: "#121212",
-            paper: "#1e1e1e",
-        },
-        text: {
-            default: "#e0e0e0",
-            disabled: "#757575",
-        },
-        divider: "#333333",
-        primary: "#90caf9",
-        secondary: "#ffb74d",
-        success: "#81c784",
-        info: "#4fc3f7",
-        warning: "#ffb74d",
-        error: "#e57373",
+        background: "#111827",
+        surface: "#1f2937",
+        muted: "#273244",
+        text: "#f9fafb",
+        subText: "#9ca3af",
+        border: "#374151",
+        primary: "#3b82f6",
     },
 };
